@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanze's Education</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Local Stylesheets -->
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/education.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cursor.css">
+
+    <!-- Favicon -->
+    <link id="shanze" rel="icon" href="assets/images/shanze.jpg" type="image/png">
+
+    <!-- Scripts -->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script defer src="./assets/js/dynamicTitle.js"></script>
+</head>
+
+<body class="no-scroll-preload">
+    <!-- Loader -->
+    <div class="loader-container">
+        <div class="atom">
+            <div class="electron"></div>
+            <div class="electron-alpha"></div>
+            <div class="electron-omega"></div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <section class="s2">
+        <div class="container-sm edSection">
+            <div class="container text-center mb-5">
+                <h1 class="head" data-aos="fade-up" data-aos-delay="300">Formal <span class="edu_background">Education</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section class="timeline">
+        <div class="container">
+            <div class="timeline-content js--fadeInLeft" style="max-width: 800px; width: 100%; margin: 0 auto;">
+                <div class="timeline-img-header" style="background-image: url('assets/images/education-page/edTimeline1.png'); background-repeat: no-repeat; background-size: cover; height: 200px; border-radius: 10px 10px 0 0;"></div>
+                <div class="date"></div>
+                <div class="timeline-card" style="padding: 1rem;">
+                    <h1 class="university-heading" style="font-size: 1.5rem; font-weight: 600; color: #6c63ff; text-align: center;"><b>New York University - Bachelor of Science in Interactive Media Arts</b></h1>
+                    <div class="logo-container" style="margin: 1rem 0; display: flex; justify-content: center;">
+                        <img class="nyu-logo" src="assets/images/education-page/nyu.svg" alt="NYU Logo" style="width: 150px; height: 150px; object-fit: cover;">
+                    </div>
+                    <ul>
+                        <b><center> PROFESSIONAL COMPETENCIES </center></b>
+                        <li>
+                            <b>Prototyping Tools:</b> Sketch, Figma, InVision, Adobe XD, Framer, Axure, User Flows Diagram, InVision Studio
+                        </li>
+                        <li>
+                            <b>Digital Tools:</b> Adobe CC (Photoshop, Illustrator, Lightroom, InDesign, Premiere, Flash), Autodesk Maya, Vectary 3D
+                        </li>
+                        <li>
+                            <b>UX/UI Design:</b> Design Thinking, Brainstorming, Storytelling, User flows, Wireframes, Low Fidelity and High Fidelity Prototypes, Motion UIs, App/Web Design, User Centered Design (UCI), iOS Design Guidelines, Minimum Viable Product (MVP), Chatbots, Interaction Design
+                        </li>
+                        <li>
+                            <b>Coding Skills:</b> HTML, CSS, JavaScript, Responsive Website, Rhino, Grasshopper, P5.js
+                        </li>
+                        <li>
+                            <b>Design Skills:</b> Product Design, Graphic Design, Illustration, Branding, Logo Design, Typography Design, Visual Identity, Poster Design, 3D Modeling & Printing, Animation, Color Theory
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOOCs Section -->
+    <div id="mooc" class="container-fluid" style="padding: 2rem 0; text-align: center;">
+        <h4 class="text-center pb-2 pt-5" data-aos="fade-up" data-aos-delay="300">Online <span class="edu_background">Accreditations</span></h4>
+        <div class="row moocs" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+            <!-- Dynamic MOOCs Cards will be inserted here -->
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot-outline"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/cursor.js"></script>
+    <script src="assets/js/education.js"></script>
+    <script>
+        AOS.init(); // Initialize Animate On Scroll
+    </script>
+
+    <!-- Modal for Course Descriptions -->
+<div class="modal fade" id="moocModal" tabindex="-1" aria-labelledby="moocModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="moocModalLabel">Course Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="moocModalBody">
+          <!-- Course description will be inserted here -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

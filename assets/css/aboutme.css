@@ -1,0 +1,203 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #2980b9, #6dd5fa, #ffd54f, #ff8a65, #cfd8dc, #7986cb, #ba68c8, #4db6ac);
+  background-size: 800% 800%;
+  animation: backgroundAnimation 30s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Container Styles */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* Row Styles */
+.row {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  max-width: 100%; /* Adjusted to fit mobile screens */
+  margin: 0 auto; /* Center the row */
+}
+
+/* Keyframes for FadeIn Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Column Styles */
+.col-md-6 {
+  text-align: center;
+}
+
+/* Image Fluid Styles */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  animation: fadeInImg 1.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* Keyframes for Image FadeIn Animation */
+@keyframes fadeInImg {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Heading Styles */
+.main-heading {
+  color: #333;
+  font-weight: 700;
+  margin-top: 20px;
+  animation: fadeInHeading 1.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* Keyframes for Heading FadeIn Animation */
+@keyframes fadeInHeading {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pre-heading Styles */
+.pre-heading {
+  color: #555;
+  font-weight: 300;
+  margin-bottom: 20px;
+  animation: fadeInPreHeading 1.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* Keyframes for Pre-heading FadeIn Animation */
+@keyframes fadeInPreHeading {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Bio Styles */
+.bio {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  animation: fadeInBio 1.5s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/* Keyframes for Bio FadeIn Animation */
+@keyframes fadeInBio {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Canvas Styles */
+#canvas {
+  display: block;
+  margin: auto;
+  max-width: 100%; /* Adjusted to fit mobile screens */
+  background-color: transparent;
+}
+
+.projects-button-container {
+  display: flex;
+  justify-content: center;  /* Centers button horizontally */
+  align-items: center;
+  width: 100%; /* Makes sure it takes full width */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.projects-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+  background-color: #f19066;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+
+.projects-button i {
+  font-size: 22px;
+}
+
+.projects-button:hover {
+  background-color: #e07b50;
+  transform: scale(1.05);
+}
